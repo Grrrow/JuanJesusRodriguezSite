@@ -2,8 +2,6 @@
 const { blok } = Astro.props
 const {label, link} = blok
 ---
-<li class="header__menu-item">
-    <a href={link} class="header__menu-link">
-        {label}
-    </a>
+<li>
+    <a href={link.url} class="hover:underline">{label}</a>
 </li>

@@ -1,42 +1,63 @@
 ---
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
-import type { StoryblokMenuItem } from '../types/StoryblokMenuItem'
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+import type { StoryblokMenuItem } from "../types/StoryblokMenuItem";
 
-const { blok } = Astro.props
-const {title, logo, titleLink, menu} = blok
-console.log("Header data:", logo)
+const { blok } = Astro.props;
+const { title, logo, titleLink, menu } = blok;
+console.log("Header data:", logo);
 ---
-    <header class="header">
-        <div class="header__logo">  
-            <a href={titleLink.url} class="header__logo-link"> 
-              {logo.source}             
-                <img src={logo.filename} alt={logo.alt} class="header__logo-image" />
-            </a>
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                {menu.map((item: StoryblokMenuItem) => (
-                    <StoryblokComponent blok={item} key={item._uid} class="header__menu-item" />
-                ))}
-            </ul>
-        </nav>
-    </header>
+
 <style>
-  main {
-    position: relative;
-  }
-  .image-background {
-    height: 80vh;
-    position: absolute;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  .image-background.light {
-    display: block;
-  }
-  .image-background.dark {
-    display: none;
+  .header-transition {
+    transition:
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
   }
 </style>
+
+<script type="module">
+  if (typeof window !== "undefined") {
+    const header = document.querySelector("#main-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) {
+        header.classList.add("bg-white", "shadow-md", "backdrop-blur");
+        header.classList.remove("bg-transparent");
+      } else {
+        header.classList.remove("bg-white", "shadow-md", "backdrop-blur");
+        header.classList.add("bg-transparent");
+      }
+    });
+  }
+</script>
+<header
+  id="main-header"
+  class="fixed top-0 left-0 w-full z-50 header-transition bg-white text-white"
+>
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href={titleLink.url} class="w-[280px] h-auto">
+      <img
+        src={logo.filename}
+        alt={logo.alt}
+        class="w-full h-auto"
+        loading="eager"
+      />
+    </a>
+    <nav class="flex flex-col items-end text-black space-y-1 text-sm">
+      <div class="text-right text-orange-500 font-semibold text-xs">
+        <a href="/es" class="hover:underline">Español</a> |
+        <a href="/en" class="hover:underline">English</a>
+      </div>
+      <ul class="flex space-x-5 uppercase font-semibold tracking-wide">
+        {
+          menu.map((item: StoryblokMenuItem) => (
+            <StoryblokComponent
+              blok={item}
+              key={item._uid}
+              class="header__menu-item"
+            />
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
