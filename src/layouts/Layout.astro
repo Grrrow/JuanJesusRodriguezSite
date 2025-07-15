@@ -1,13 +1,76 @@
+---
+import { ClientRouter } from "astro:transitions";
+import "../styles/global.css";
+import type { StoryblokMeta } from "../types/StoryblokMeta";
+import type { StoryblokHeader } from "../types/StoryblokHeader"; // Import the Header type
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+
+
+interface Props {
+  meta: StoryblokMeta;
+  header: StoryblokHeader;
+}
+const { meta, header } = Astro.props;
+
+const { title, description, shortDescription, route, image } = meta;
+console.log("Meta data:", meta);
+console.log("Header data:",header)
+const completeTitle = `${title}`;
+const url = `https://juanjesusrodriguez.com/${route}`;
+---
+
 <!doctype html>
-<link rel="stylesheet" href="../styles/global.css" />
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title} - {shortDescription}</title>
+    <meta name="title" content={completeTitle} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={url} />
+    <meta
+      name="keywords"
+      content="Juan Jesús Rodriguez"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Spanish" />
+    <meta name="author" content="Lirycs digital solutions" />
+    <meta itemprop="name" content={completeTitle} />
+    <meta itemprop="description" content={description} />
+    <meta name="image" content={image.source} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={completeTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image:src" content={image.source} />
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content={completeTitle} />
+    <meta name="og:description" content={description} />
+    <meta name="og:url" content={url} />
+    <meta name="og:site_name" content={description} />
+    <meta name="og:locale" content="es_ES" />
+    <meta name="og:type" content="website" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
+    <ClientRouter />
+  </head>
+  <StoryblokComponent blok={header} />
 	<body>
 		<slot />
 	</body>

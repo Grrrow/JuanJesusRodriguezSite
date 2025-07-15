@@ -1,0 +1,32 @@
+---
+import { storyblokEditable } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { getComponent } from '../utils/getcomponent'
+
+const { blok } = Astro.props
+const body = blok.body
+---
+  {
+    body?.map((blok: any) => {
+      return <StoryblokComponent blok={blok} />
+    })
+  }
+<style>
+  main {
+    position: relative;
+  }
+  .image-background {
+    height: 80vh;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .image-background.light {
+    display: block;
+  }
+  .image-background.dark {
+    display: none;
+  }
+</style>

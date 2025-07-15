@@ -9,10 +9,15 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@storyblok/astro": "^7.2.0",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.1",
     "dotenv": "^17.2.0",
     "storyblok-js-client": "^7.1.0",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.11",
+    "vite": "^6.3.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.1.0"
   }
 }
