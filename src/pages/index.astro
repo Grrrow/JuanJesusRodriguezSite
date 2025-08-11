@@ -1,11 +1,25 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-import type { StoryblokImage } from '../types/StoryblokImage';
-import type { StoryblokUrl } from '../types/StoryblokUrl';
+import '../styles/global.css'; // IGNORE
+import { useStoryblokApi } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { getComponent } from '../utils/getcomponent';
+import type { StoryblokMeta } from '../types/StoryblokMeta';
+import type { StoryblokHeader } from '../types/StoryblokHeader';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const storyblokApi = useStoryblokApi()
+const { data } = await storyblokApi.get('cdn/stories/home', {
+  version: 'draft',
+})
+
+const story = data.story
+const { content } = story
+const meta: StoryblokMeta = (getComponent('meta', content.Header) as StoryblokMeta);
+const header: StoryblokHeader = (getComponent('header', content.Header) as StoryblokHeader);
 ---
 
-<Welcome />
+<Layout meta={meta} header={header}>
+    {content?.body.length > 0 ? content?.body.map((component: any) => <StoryblokComponent blok={component} /> ): null}
+</Layout>
