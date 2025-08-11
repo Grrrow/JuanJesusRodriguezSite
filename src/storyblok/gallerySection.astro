@@ -1,0 +1,40 @@
+---
+import GalleryItem from "./GalleryItem.astro";
+
+const { blok } = Astro.props;
+
+const title = blok.title || "FOTOS DE PRENSA";
+
+console.log("Gallery Section props:", blok.photoList);
+
+// Si preferimos una sola lista y filtrar por categoría, aquí haríamos filter()
+---
+<section class="max-w-7xl mx-auto px-6 py-10">
+  <h1 class="text-3xl font-semibold mb-12 text-center">{title}</h1>
+  <div class="columns-2 xl:columns-3 md:columns-3 gap-4 sm:gap-2 [column-fill:_balance]">
+    {blok.photoList.map(item => (
+      <div class="break-inside-avoid mb-4">
+        <GalleryItem image={item} />
+      </div>
+    ))}
+  </div>
+</section>
+
+
+<!-- Lightbox (PhotoSwipe) -->
+<script type="module">
+  import PhotoSwipeLightbox from 'https://cdn.skypack.dev/photoswipe/lightbox';
+  import 'https://cdn.skypack.dev/photoswipe/style.css';
+
+  const galleries = ['#press-gallery', '#stage-gallery'];
+  galleries.forEach((sel) => {
+    const el = document.querySelector(sel);
+    if (!el) return;
+    const lb = new PhotoSwipeLightbox({
+      gallery: sel,
+      children: 'a',
+      pswpModule: () => import('https://cdn.skypack.dev/photoswipe')
+    });
+    lb.init();
+  });
+</script>

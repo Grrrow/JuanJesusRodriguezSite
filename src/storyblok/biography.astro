@@ -1,0 +1,32 @@
+---
+import { renderRichText } from '@storyblok/js';
+const { blok } = Astro.props
+
+console.log("section", blok)
+const { biography, pressDossier } = blok
+console.log(pressDossier)
+
+---
+
+{biography && (
+    <div class="rich-text mx-4 sm:mx-8 sm:my-8 lg:mx-20 max-w-[900px] xl:mx-auto">
+        {(() => {
+            try {
+                const renderedRichText = renderRichText(biography);
+                return <Fragment set:html={renderedRichText} />;
+            } catch (error) {
+                console.error("Error rendering rich text:", error);
+                return <p>{JSON.stringify(biography)}</p>;
+            }
+        })()}
+        {pressDossier?.filename && (
+            <a
+                href={pressDossier.filename}
+                download
+                class="block mt-8 text-blue-600 underline hover:text-blue-800"
+            >
+                Dosier de prensa
+            </a>
+        )}
+    </div>
+)}

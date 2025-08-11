@@ -1,0 +1,12 @@
+---
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+const { blok } = Astro.props;
+---
+<section class="max-w-4xl mx-auto px-6">
+  {blok.title && <h1 class="text-3xl md:text-4xl font-semibold mb-8">{blok.title}</h1>}
+  {blok.intro && <div class="prose max-w-3xl mb-10" innerHTML={blok.intro} />}
+
+  <div class="space-y-12">
+    {Array.isArray(blok.group) && blok.group.map(g => <StoryblokComponent blok={g} />)}
+  </div>
+</section>

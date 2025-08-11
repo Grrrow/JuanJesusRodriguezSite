@@ -1,7 +1,9 @@
 ---
 const { blok } = Astro.props
 const {label, link} = blok
+console.log("menuItem", blok)
 ---
-<li>
-    <a href={link.url} class="hover:underline">{label}</a>
+
+<li class="text-center">
+    <a href={link.cached_url} class="hover:underline text-black">{label}</a>
 </li>

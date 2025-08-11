@@ -3,61 +3,91 @@ import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 import type { StoryblokMenuItem } from "../types/StoryblokMenuItem";
 
 const { blok } = Astro.props;
-const { title, logo, titleLink, menu } = blok;
-console.log("Header data:", logo);
+const { titleLink, menu } = blok;
 ---
 
 <style>
-  .header-transition {
-    transition:
-      background-color 0.3s ease,
-      box-shadow 0.3s ease;
-  }
+  .header-transition { transition: background-color .3s ease, box-shadow .3s ease; }
 </style>
 
-<script type="module">
-  if (typeof window !== "undefined") {
-    const header = document.querySelector("#main-header");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
-        header.classList.add("bg-white", "shadow-md", "backdrop-blur");
-        header.classList.remove("bg-transparent");
-      } else {
-        header.classList.remove("bg-white", "shadow-md", "backdrop-blur");
-        header.classList.add("bg-transparent");
-      }
-    });
-  }
+<script is:inline type="module">
+  const header = document.querySelector("#main-header");
+  const btn = document.querySelector("#menu-toggle");
+  const panel = document.querySelector("#mobile-menu");
+
+  // const onScroll = () => {
+  //   if (scrollY > 10) {
+  //     header.classList.add("bg-white","shadow-md","backdrop-blur","text-black");
+  //     header.classList.remove("bg-transparent","text-white");
+  //   } else {
+  //     header.classList.add("bg-transparent","text-white");
+  //     header.classList.remove("bg-white","shadow-md","backdrop-blur","text-black");
+  //   }
+  // };
+  // onScroll(); addEventListener("scroll", onScroll);
+
+  const closeMenu = () => { panel.classList.add("hidden"); btn.setAttribute("aria-expanded","false"); };
+  const openMenu  = () => { panel.classList.remove("hidden"); btn.setAttribute("aria-expanded","true"); };
+
+  btn?.addEventListener("click", () => (btn.getAttribute("aria-expanded")==="true" ? closeMenu() : openMenu()));
+  addEventListener("keydown", e => { if (e.key==="Escape") closeMenu(); });
+  matchMedia("(min-width:768px)").addEventListener("change", e => { if (e.matches) closeMenu(); });
 </script>
-<header
-  id="main-header"
-  class="fixed top-0 left-0 w-full z-50 header-transition bg-white text-white"
->
+
+<header id="main-header" class="fixed top-0 left-0 w-full z-50 header-transition bg-white text-black">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-    <a href={titleLink.url} class="w-[280px] h-auto">
-      <img
-        src={logo.filename}
-        alt={logo.alt}
-        class="w-full h-auto"
-        loading="eager"
-      />
+
+    <!-- LOGO tipográfico con Tailwind -->
+    <a href={titleLink.url} class="flex items-center gap-3 shrink-0">
+      <div class="flex flex-col leading-tight">
+        <span class="text-lg sm:text-xl md:text-2xl font-bold tracking-wide">Juan Jesús Rodríguez</span>
+        <span class="text-[11px] sm:text-xs uppercase tracking-[.2em] text-orange-400">Barítono</span>
+      </div>
     </a>
-    <nav class="flex flex-col items-end text-black space-y-1 text-sm">
+
+    <!-- Menú desktop -->
+    <nav class="hidden md:flex flex-col items-end space-y-1 text-sm">
       <div class="text-right text-orange-500 font-semibold text-xs">
         <a href="/es" class="hover:underline">Español</a> |
         <a href="/en" class="hover:underline">English</a>
       </div>
       <ul class="flex space-x-5 uppercase font-semibold tracking-wide">
-        {
-          menu.map((item: StoryblokMenuItem) => (
-            <StoryblokComponent
-              blok={item}
-              key={item._uid}
-              class="header__menu-item"
-            />
-          ))
-        }
+        {menu.map((item: StoryblokMenuItem) => (
+          <StoryblokComponent blok={item} key={item._uid} />
+        ))}
       </ul>
     </nav>
+
+    <!-- Botón hamburguesa (móvil) -->
+    <button
+      id="menu-toggle"
+      class="md:hidden relative inline-flex flex-col justify-center items-center w-10 h-10 rounded-md ring-1 ring-white/20 hover:ring-white/40 transition text-current"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+      aria-label="Abrir menú"
+    >
+      <span class="sr-only">Abrir menú</span>
+      <!-- 3 barras: se animan a 'X' con aria-expanded -->
+      <span class="block h-0.5 w-6 bg-current transition-transform duration-200 origin-center
+                   aria-expanded:translate-y-1.5 aria-expanded:rotate-45"></span>
+      <span class="block h-0.5 w-6 bg-current my-1 transition-opacity duration-200
+                   aria-expanded:opacity-0"></span>
+      <span class="block h-0.5 w-6 bg-current transition-transform duration-200 origin-center
+                   aria-expanded:-translate-y-1.5 aria-expanded:-rotate-45"></span>
+    </button>
+  </div>
+
+  <!-- Panel móvil -->
+  <div id="mobile-menu" class="md:hidden hidden bg-white/95 text-black border-t border-gray-200 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 space-y-4">
+      <div class="text-sm text-orange-600 font-semibold">
+        <a href="/es" class="hover:underline">Español</a> | <a href="/en" class="hover:underline">English</a>
+      </div>
+      <ul class="flex flex-col gap-3 uppercase font-semibold tracking-wide">
+        {menu.map((item: StoryblokMenuItem) => (
+          <StoryblokComponent blok={item} key={item._uid} class="py-1" />
+        ))}
+      </ul>
+    </div>
   </div>
 </header>

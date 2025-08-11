@@ -1,0 +1,16 @@
+---
+import { storyblokEditable } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { getComponent } from '../utils/getcomponent'
+
+const { blok } = Astro.props
+console.log("blok", blok)
+---
+<div class="mt-8"></div>
+<div class="w-screen">
+  {
+    blok.content?.map((blok: any) => {
+      return <StoryblokComponent blok={blok} />
+    })
+  }
+</div>

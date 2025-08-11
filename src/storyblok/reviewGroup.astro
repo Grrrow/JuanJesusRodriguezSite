@@ -1,0 +1,15 @@
+---
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+const { blok } = Astro.props;
+---
+<section>
+  <!-- Estilo de encabezado por producción, como en la página original -->
+  <h2 class="text-xl md:text-2xl font-bold mb-5" style="color: #D4BE85">{blok.title}</h2>
+
+  <!-- Una columna como base (fiel al original); si quieres, en md puedes pasar a 2 -->
+  <div class="space-y-8">
+    {Array.isArray(blok.reviews) && blok.reviews.map(r => (
+      <StoryblokComponent blok={r} />
+    ))}
+  </div>
+</section>
