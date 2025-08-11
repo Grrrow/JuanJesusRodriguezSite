@@ -1,4 +1,5 @@
 ---
+import type { SbBlokData } from "@storyblok/astro";
 import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
 const { blok } = Astro.props;
 ---
@@ -8,7 +9,7 @@ const { blok } = Astro.props;
 
   <!-- Una columna como base (fiel al original); si quieres, en md puedes pasar a 2 -->
   <div class="space-y-8">
-    {Array.isArray(blok.reviews) && blok.reviews.map(r => (
+    {Array.isArray(blok.reviews) && blok.reviews.map((r: SbBlokData) => (
       <StoryblokComponent blok={r} />
     ))}
   </div>
