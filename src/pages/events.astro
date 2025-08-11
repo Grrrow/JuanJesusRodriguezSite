@@ -10,7 +10,7 @@ import type { StoryblokHeader } from '../types/StoryblokHeader';
 
 
 const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories/home', {
+const { data } = await storyblokApi.get('cdn/stories/events', {
   version: 'draft',
 })
 
@@ -18,8 +18,9 @@ const story = data.story
 const { content } = story
 const meta: StoryblokMeta = (getComponent('meta', content.Header) as StoryblokMeta);
 const header: StoryblokHeader = (getComponent('header', content.Header) as StoryblokHeader);
+console.log("content", content.body)
 ---
 
 <Layout meta={meta} header={header}>
-    {content?.body.length > 0 ? content?.body.map((component: any) => <StoryblokComponent blok={component} /> ): null}
+    {content?.body.length > 0 ? content?.body?.map((component: any) => <StoryblokComponent blok={component} /> ): null}
 </Layout>

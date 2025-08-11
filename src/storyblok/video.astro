@@ -1,0 +1,10 @@
+---
+import LiteYoutube from "../components/LiteYoutube.astro";
+const { blok } = Astro.props
+const {videoId, title, subtitle, backgroundImage} = blok
+---
+<LiteYoutube
+    videoId={videoId}
+    title={title}
+    subtitle={subtitle}
+    backgroundImage={backgroundImage?.filename}></LiteYoutube>

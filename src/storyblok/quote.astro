@@ -1,0 +1,16 @@
+---
+const { blok } = Astro.props;
+const text = blok.text;
+---
+
+<section class="bg-[#222B33] text-white">
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <p class="text-center italic text-lg">{text}</p>
+  </div>
+  <div class="overflow-hidden">
+    <svg class="w-full h-8 text-gray-100" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon points="0,10 100,0 100,10" />
+    </svg>
+  </div>
+</section>
+

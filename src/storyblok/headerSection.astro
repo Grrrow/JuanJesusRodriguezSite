@@ -1,0 +1,25 @@
+---
+import LiteYoutube from "../components/LiteYoutube.astro";
+import { getOptimizedImage } from "../utils/getOptimizedImage";
+const { blok } = Astro.props
+const {image, title} = blok
+
+const url = getOptimizedImage(blok.image.filename, {
+  width: 1600,
+  format: 'webp',
+  brightness: -15,
+});
+---
+{/* Puedes usar clases como h-screen, h-[50vh], etc. para ajustar el alto según la pantalla */}
+<section class="header-image-section mt-[100px] overflow-hidden relative">
+    <img
+        src={url}
+        alt={image?.alt || "Imagen de cabecera"}
+        class="w-full block object-cover object-top max-h-[70vh]"
+    />
+    <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="text-white text-6xl font-bold drop-shadow-lg">
+            {title}
+        </h1>
+    </div>
+</section>

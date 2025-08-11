@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+const { image } = Astro.props;
+console.log("Image props:", image);
+const {image: { filename, alt }} = image;
+const sbImageUrl = (
+  filename: string,
+  opts: {
+    width?: number;          // ?w=
+    height?: number;         // ?h=
+    format?: 'webp'|'jpg'|'png'|'auto'; // &format=
+    brightness?: number;     // filters:brightness(-100..100)
+    quality?: number;        // &q=
+    extraFilters?: string[]; // e.g. ["contrast(115)","grayscale()"]
+  } = {}
+  
+) => {
+  if (!filename) return '';
+  const path = filename.replace(/^https:\/\/a\.storyblok\.com\//, ''); // quedará f/...
+  const filters: string[] = [];
+  if (typeof opts.brightness === 'number') filters.push(`brightness(${opts.brightness})`);
+  if (opts.extraFilters?.length) filters.push(...opts.extraFilters);
+
+  const filterPath = filters.length ? `filters:${filters.join(':')}/` : '';
+  const qs = new URLSearchParams();
+  if (opts.width) qs.set('w', String(opts.width));
+  if (opts.height) qs.set('h', String(opts.height));
+  if (opts.format) qs.set('format', opts.format);
+  if (opts.quality) qs.set('q', String(opts.quality));
+
+  // IMPORTANTE: /m/ antes de /f/ para habilitar el servicio de imágenes
+  return `https://img.storyblok.com/${filterPath}m/${path}?${qs.toString()}`;
+}
+// URLs responsive
+const url480  = sbImageUrl(filename, { width: 480,  format: 'webp', quality: 80 });
+const url800  = sbImageUrl(filename, { width: 800,  format: 'webp', quality: 80 });
+const url1200 = sbImageUrl(filename, { width: 1200, format: 'webp', quality: 80 });
+const url1600 = sbImageUrl(filename, { width: 1600, format: 'webp', quality: 80 });
+---
+
+<figure class="break-inside-avoid group cursor-zoom-in">
+  <a href={filename} data-pswp-width="1600" data-pswp-height="1067">
+    <img
+      src={url800}
+      srcset={`${url480} 480w, ${url800} 800w, ${url1200} 1200w, ${url1600} 1600w`}
+      sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
+      alt={alt || ''}
+      loading="lazy"
+      decoding="async"
+      class="w-full h-auto object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+    />
+  </a>
+</figure>

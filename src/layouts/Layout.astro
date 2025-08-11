@@ -13,8 +13,6 @@ interface Props {
 const { meta, header } = Astro.props;
 
 const { title, description, shortDescription, route, image } = meta;
-console.log("Meta data:", meta);
-console.log("Header data:",header)
 const completeTitle = `${title}`;
 const url = `https://juanjesusrodriguez.com/${route}`;
 ---
@@ -39,7 +37,7 @@ const url = `https://juanjesusrodriguez.com/${route}`;
     <meta itemprop="name" content={completeTitle} />
     <meta itemprop="description" content={description} />
     <meta name="image" content={image.source} />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon32x32.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -72,7 +70,7 @@ const url = `https://juanjesusrodriguez.com/${route}`;
   </head>
   <StoryblokComponent blok={header} />
 	<body>
-    <section class="max-w-6xl mx-auto px-4 py-10">
+    <section>
 		  <slot />
     </section>
 	</body>

@@ -1,0 +1,28 @@
+---
+const { blok } = Astro.props;
+import { sbImageUrl } from '../utils/sbImage'; // Usa tu helper si lo tienes
+
+const hasImage = blok.image?.filename;
+---
+
+<article class="border border-gray-200 rounded-xl overflow-hidden flex flex-row h-full m-auto">
+  {hasImage && (
+    <div class="w-full h-[250px] overflow-hidden">
+      <img
+        src={sbImageUrl(blok.image.filename, { width: 800, format: 'webp', quality: 80 })}
+        alt={`Foto: ${blok.title} – ${blok.venue}`}
+        class="object-cover w-full h-full"
+      />
+    </div>
+  )}
+
+  <div class="p-5 flex flex-col flex-grow w-full">
+    <div class="text-sm text-gray-500">{blok.date}</div>
+    <h3 class="mt-1 text-lg font-semibold">{blok.title}{blok.role ? ` — ${blok.role}` : ''}</h3>
+    <div class="text-sm text-gray-700">{blok.venue}{blok.city ? ` · ${blok.city}` : ''}</div>
+    <div class="mt-auto flex gap-3 pt-4">
+      {blok.link && <a href={blok.link} class="underline" target="_blank" rel="noreferrer">Más info</a>}
+      {blok.tickets_url && <a href={blok.tickets_url} class="underline font-semibold" target="_blank" rel="noreferrer">Entradas</a>}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,49 @@
+---
+const { blok } = Astro.props;
+// lista desde Storyblok (theatre_item.name)
+const strings: string[] = (blok.list || [])
+  .map((t: any) => t?.name)
+  .filter(Boolean);
+console.log("blok.theatrelist", blok);
+console.log("Theatre List:", strings);
+const bg = blok.backgroundImage?.filename;
+---
+
+<section
+  class="bg-fixed bg-cover bg-center text-white"
+  style={bg ? `background-image:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('${bg}');background-size:cover;background-position:center;` : ''}
+>
+  <div data-theatre={strings.toString()} class="max-w-7xl mx-auto px-6 py-16 md:py-24 text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+      <span class="font-extrabold">Teatro</span>
+      <!-- aria-live para anunciar cambios, sin ser molesto -->
+      <span id="theatre-typer" class="ml-2 align-baseline" aria-live="polite" aria-atomic="true">
+      </span>
+    </h2>
+  </div>
+</section>
+<script is:inline src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script type="module">
+  // Respeta “reducir movimiento”
+
+  const prefersReduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const strings = document.querySelector('[data-theatre]')?.dataset.theatre?.split(',') || [];
+  const el = document.getElementById('theatre-typer');
+  const items = JSON.parse({ value: JSON.stringify(strings) }.value);
+    console.log("Theatre items:", items);
+  if (el && items.length > 1 && !prefersReduced) {
+    const typed = new Typed(el, {
+      strings: items,
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1400,
+      smartBackspace: true,
+      loop: true,
+      showCursor: true,
+      cursorChar: ' |',
+    });
+    console.log("Typed.js initialized with items:", typed);
+    addEventListener('astro:before-swap', () => typed.destroy());
+  }
+</script>

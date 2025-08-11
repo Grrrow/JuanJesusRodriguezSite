@@ -1,0 +1,17 @@
+---
+import Video from "./video.astro";
+
+
+const { blok } = Astro.props;
+
+// Acepta URL o ID
+const raw = String(blok.url || "");
+let id = "";
+try {
+  const u = new URL(raw);
+  id = u.searchParams.get('v') || u.pathname.split('/').pop() || "";
+} catch {
+  id = raw;
+}
+---
+<Video blok={{ videoId: id }} class="w-full h-full bg-contain" />
