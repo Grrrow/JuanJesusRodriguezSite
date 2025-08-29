@@ -1,5 +1,4 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 import '../styles/global.css'; // IGNORE
 import { useStoryblokApi } from '@storyblok/astro'
@@ -7,13 +6,14 @@ import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 import { getComponent } from '../utils/getcomponent';
 import type { StoryblokMeta } from '../types/StoryblokMeta';
 import type { StoryblokHeader } from '../types/StoryblokHeader';
+import isPreview from '../utils/isPreview';
 
 
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories/events', {
-  version: 'draft',
+  version: isPreview() ? 'draft' : 'published',
 })
-
+console.log("PREVIEW", isPreview() )
 const story = data.story
 const { content } = story
 const meta: StoryblokMeta = (getComponent('meta', content.Header) as StoryblokMeta);
