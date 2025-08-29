@@ -4,6 +4,8 @@ import { storyblok } from '@storyblok/astro';
 import basicSsl from '@vitejs/plugin-basic-ssl'
 import tailwindcss from '@tailwindcss/vite';
 import { loadEnv } from 'vite';
+import vercel from '@astrojs/vercel';
+
 
 const env = loadEnv('', process.cwd(), 'STORYBLOK')
 console.log(env.STORYBLOK_API_KEY)
@@ -42,4 +44,6 @@ export default defineConfig({
       },
     })
   ],
+    output: env.STORYBLOK_IS_PREVIEW === 'yes' ? 'server' : 'static',
+    adapter: vercel()
 });

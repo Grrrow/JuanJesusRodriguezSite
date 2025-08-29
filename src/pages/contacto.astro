@@ -10,17 +10,26 @@ import isPreview from '../utils/isPreview';
 
 
 const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories/events', {
+const { data } = await storyblokApi.get('cdn/stories/contacto', {
   version: isPreview() ? 'draft' : 'published',
+
 })
-console.log("PREVIEW", isPreview() )
+
 const story = data.story
 const { content } = story
 const meta: StoryblokMeta = (getComponent('meta', content.Header) as StoryblokMeta);
 const header: StoryblokHeader = (getComponent('header', content.Header) as StoryblokHeader);
-console.log("content", content.body)
 ---
 
 <Layout meta={meta} header={header}>
     {content?.body.length > 0 ? content?.body?.map((component: any) => <StoryblokComponent blok={component} /> ): null}
+    <div class="flex flex-col items-center justify-center w-3xl text-center m-auto p-12">
+      <h1 class="text-3xl font-bold mb-4">Ponte en contacto conmigo</h1>
+      <p class="text-lg">
+        Si estás interesado/a en mi trabajo o tienes alguna pregunta por favor ponte en contacto conmigo. También puedes ponerte en contacto conmigo vía
+        <a href="https://www.facebook.com/juanjesus.rodriguezjimenez" target="_blank" class="text-yellow-400 hover:underline">Facebook</a>
+        o vía
+        <a href="mailto:juanjesusrodriguezsite@gmail.com" class="text-yellow-400 hover:underline">email</a>.
+      </p>
+    </div>
 </Layout>

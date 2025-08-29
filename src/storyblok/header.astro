@@ -11,9 +11,7 @@ const { titleLink, menu } = blok;
 </style>
 
 <script is:inline type="module">
-  const header = document.querySelector("#main-header");
-  const btn = document.querySelector("#menu-toggle");
-  const panel = document.querySelector("#mobile-menu");
+
 
   // const onScroll = () => {
   //   if (scrollY > 10) {
@@ -25,13 +23,20 @@ const { titleLink, menu } = blok;
   //   }
   // };
   // onScroll(); addEventListener("scroll", onScroll);
+  function setupToggle(){
+    const header = document.querySelector("#main-header");
+    const btn = document.querySelector("#menu-toggle");
+    const panel = document.querySelector("#mobile-menu");
+    const closeMenu = () => { panel.classList.add("hidden"); btn.setAttribute("aria-expanded","false"); };
+    const openMenu  = () => { panel.classList.remove("hidden"); btn.setAttribute("aria-expanded","true"); };
 
-  const closeMenu = () => { panel.classList.add("hidden"); btn.setAttribute("aria-expanded","false"); };
-  const openMenu  = () => { panel.classList.remove("hidden"); btn.setAttribute("aria-expanded","true"); };
+    btn?.addEventListener("click", () => (btn.getAttribute("aria-expanded")==="true" ? closeMenu() : openMenu()));
+    addEventListener("keydown", e => { if (e.key==="Escape") closeMenu(); });
+    matchMedia("(min-width:768px)").addEventListener("change", e => { if (e.matches) closeMenu(); });
+  }
 
-  btn?.addEventListener("click", () => (btn.getAttribute("aria-expanded")==="true" ? closeMenu() : openMenu()));
-  addEventListener("keydown", e => { if (e.key==="Escape") closeMenu(); });
-  matchMedia("(min-width:768px)").addEventListener("change", e => { if (e.matches) closeMenu(); });
+  document.addEventListener("DOMContentLoaded", setupToggle);
+  document.addEventListener("astro:after-swap", setupToggle);
 </script>
 
 <header id="main-header" class="fixed top-0 left-0 w-full z-50 header-transition bg-white text-black">

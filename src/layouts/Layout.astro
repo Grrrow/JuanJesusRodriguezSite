@@ -69,11 +69,14 @@ const url = `https://juanjesusrodriguez.com/${route}`;
     <ClientRouter />
   </head>
   <StoryblokComponent blok={header} />
-	<body>
-    <section>
-		  <slot />
-    </section>
-	</body>
+  <body>
+  <section>
+      <slot />
+  </section>
+  <footer style="text-align:center; padding: 1rem 0; font-size: 0.9rem; color: #888;">
+    &copy; {new Date().getFullYear()} Juan Jesús Rodriguez. Todos los derechos reservados.
+  </footer>
+  </body>
 </html>
 
 <style>
