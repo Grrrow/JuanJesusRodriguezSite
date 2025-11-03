@@ -1,0 +1,544 @@
+{
+  "_uid": "f23ba91d-7a83-4df4-94a6-3df56db193d1",
+  "body": [
+    {
+      "_uid": "1cce2a83-5ed8-4047-bde4-cf14084d7d38",
+      "image": {
+        "id": 78552067133404,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/2560x1706/a3dde4dfd6/ernani-juan-jesus-rodriguez-oviedo-t-campoamor-3-scaled.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": { "size": "2560x1250" },
+        "is_external_url": false
+      },
+      "title": "Reviews",
+      "component": "headerSection",
+      "_editable": "<!--#storyblok#{\"name\": \"headerSection\", \"space\": \"285776547914096\", \"uid\": \"1cce2a83-5ed8-4047-bde4-cf14084d7d38\", \"id\": \"78550765905141\"}-->"
+    },
+    {
+      "_uid": "0320a812-bcf9-4148-b5e7-a510164bc029",
+      "group": [
+        {
+          "_uid": "757e15bc-a55a-4230-af74-05dbf4698e22",
+          "title": "Nabucco, G.Verdi – Opera de Marseille, Marseille – Abril 2023",
+          "reviews": [
+            {
+              "url": "https://www.concertonet.com/scripts/review.php?ID_review=15562",
+              "_uid": "f0ebd2fb-ba40-4c5a-aae9-92cb23fe4db5",
+              "date": "",
+              "author": "Florent Coudeyrat ",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Annoncé souffrant, Juan Jesús Rodriguez (Nabucco) domine pourtant ses partenaires de toute sa classe vocale, d’une homogénéité parfaite sur toute la tessiture. Ses phrasés d’une grande noblesse, autant par son attention au sens qu’à la diction, donnent une incarnation d’une grande intensité théâtrale, vivement applaudie en fin de soirée”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "www.concertonet.com",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"f0ebd2fb-ba40-4c5a-aae9-92cb23fe4db5\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "https://www.classiquenews.com/critique-opera-marseille-opera-municipal-le-30-mars-2023-g-verdi-nabucco-j-j-rodriguez-c-boross-s-lim-j-c-mast-p-arrivabeni/",
+              "_uid": "0bc916a2-7fa1-4cf9-974f-d081fd245150",
+              "date": "",
+              "author": "Emmanuel Andrieu",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“La soirée valait surtout pour les deux principaux protagonistes, le baryton andalou Juan Jesus Rodriguez et la soprano hongroise Csilla Boross, réunis à nouveau par Maurice Xiberras dans son théâtre marseillais après leur triomphal Macbeth in loco en 2016. Evidence chaque fois confirmée – après son Macbeth précité, son Simon Boccanegra en 2018 ou, plus récemment, son Giacomo (dans Giovanna d’Arco) sur cette même scène marseillaise -, l’identification de JJR (pour les intimes) au monde verdien renouvelle le miracle. Au-delà de ses qualités vocales qui cochent toutes les cases de la fameuse tessiture de « baryton verdien », l’évolution du personnage constitue un modèle, depuis la fureur de son entrée, (« Tremin gl’insani ») à la prière « Dio di Giuda ! » que le chanteur n’aborde pas comme un « grand air », mais comme l’accomplissement d’une soudaine humilité. Et comment ne pas vanter aussi la présence scénique, la sobriété du geste, l’efficacité de l’expression, aussi fabuleux que ne le sont le timbre, le souffle ou l’étendue vocale. Nous le répétons à longueur de recensions, l’un des plus grands barytons verdiens de sa génération !”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Nabucco de rêve à Marseille",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Juan Jesus Rodriguez,",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      },
+                      { "type": "hard_break" },
+                      {
+                        "text": "l’un des plus grands barytons verdiens de sa génération.",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "www.classiquenews.com",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"0bc916a2-7fa1-4cf9-974f-d081fd245150\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "https://www.concertclassic.com/article/nabucco-selon-jean-christophe-mast-lopera-de-marseille-le-grand-pardon-compte-rendu",
+              "_uid": "4ff71a9a-58d3-45b7-b400-372eacda1861",
+              "date": "",
+              "author": "Michel Egéa",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Annoncé souffrant, Juan Jesús Rodriguez (Nabucco) domine pourtant ses partenaires de toute sa classe vocale, d’une homogénéité parfaite sur toute la tessiture. Ses phrasés d’une grande noblesse, autant par son attention au sens qu’à la diction, donnent une incarnation d’une grande intensité théâtrale, vivement applaudie en fin de soirée”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "www.concertclassic.com",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"4ff71a9a-58d3-45b7-b400-372eacda1861\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "https://www.olyrix.com/articles/production/6673/nabucco-verdi-opera-marseille-arrivabeni-mast-bourdin-noel-fanon-boross-gautrot-janot-rodriguez-lim-furlan-duffau-dear-orchestre-choeur-30-mars-2023-article-critique-compte-rendu",
+              "_uid": "eef36614-6bdc-498e-9f45-053c3107e0df",
+              "date": "",
+              "author": "Odile Rambaud",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Juan Jesús Rodríguez est annoncé souffrant avant la représentation, mais assure le spectacle. Économisant sa voix mais imperceptiblement durant l’acte I, il déploie ensuite avec efficacité les différentes facettes de son personnage avec sa ligne puissante, timbrée, aux graves denses qui affirment son autorité et sa folie, lorsqu’il se prend pour Dieu. Il est alors foudroyé par un éclair qui éblouit le public, plongé ensuite dans le noir et le silence complet. Nabucco, désormais sans couronne, sans cheveux, une larme sur la joue, reste sur un fauteuil roulant de bois. Juan Jesús Rodríguez déploie alors son médium, avec un léger vibrato, des aigus expressifs soutenus par un souffle constant, la ligne vocale étant nettement articulée. Son imposante palette de nuances dégage une émotion palpable, lorsqu’il redoute l’assassinat de sa fille.”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "www.olyrix.com",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"eef36614-6bdc-498e-9f45-053c3107e0df\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "",
+              "_uid": "091d9081-64f6-4842-98cb-20b9660a2fab",
+              "date": "",
+              "author": "Juan Jesús Rodríguez, indiscutido Nabucco",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Juan Jesús Rodríguez hizo gala de una voz de amplísimo espectro, potencia bien controlada, justeza musical en todo momento, clara dicción, timbre constante a lo largo de la tesitura y la pizca de metal“",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      },
+                      { "type": "hard_break" },
+                      {
+                        "text": "En el escenario brillaron con luz propia la voz y el porte de Juan Jesús Rodríguez en el papel titular, quien hizo gala de una voz de amplísimo espectro, potencia bien controlada, justeza musical en todo momento, clara dicción, timbre constante a lo largo de la tesitura y la pizca de metal que dio a su emisión un carácter aterciopelado. El barítono español imprimió lirismo en las horas bajas del gran emperador babilónico —que el libreto califica erróneamente de asirio— y también furor y odio para con sus enemigos de siempre, los hebreos y su dios único. Gracias a un detallado trabajo vocal y dramático, transmitió un sentimiento pocas veces visto en la ópera romántica: el arrepentimiento.",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Ópera Actual",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"091d9081-64f6-4842-98cb-20b9660a2fab\", \"id\": \"78550765905141\"}-->"
+            }
+          ],
+          "component": "reviewGroup",
+          "_editable": "<!--#storyblok#{\"name\": \"reviewGroup\", \"space\": \"285776547914096\", \"uid\": \"757e15bc-a55a-4230-af74-05dbf4698e22\", \"id\": \"78550765905141\"}-->"
+        },
+        {
+          "_uid": "ac8b81ef-4a5c-4d65-89b3-f89c4c4baa46",
+          "title": "ERNANI, G.Verdi – Teatro Campoamor, Oviedo – Enero 2023",
+          "reviews": [
+            {
+              "url": "",
+              "_uid": "6266b41b-f180-4a55-b7b5-37b5ad43ea48",
+              "date": "",
+              "author": "Mauricio Villa",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Juan Jesus Rodriguez played the role of Don Carlo. He has a beautiful dark strong voice and a fantastic ability to sing long legato lines, like in his first duet with Elvira: “Da quell di…” He can sound sweet and menacing simultaneously and play with the colors of his voice and dynamics. His interpretation of his aria: “Lo vedremo…” was a lesson in legato singing, strong high notes (up to high F sharp), and deep emotion. He dealt easily with the uncomfortable high tessitura of the fragment: “Ah! Vieni meco…” constantly navigating around E flat and high F in long expansive lines. He was splendid in his second aria: “Oh de verd’anni miei,” keeping his floating expansive long lines and easy high notes, as proved by the high G he interpolated in the final cadenza.”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Operawire",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"6266b41b-f180-4a55-b7b5-37b5ad43ea48\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "",
+              "_uid": "9ad67b36-6bd7-438f-837c-71e1335f213b",
+              "date": "",
+              "author": "Cosme Marina",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Juan Jesús Rodríguez dejó claro, como Don Carlo, que es uno de los barítonos europeos de mayor interés en la interpretación verdiana, dotado de un canto noble y luminoso, manteniendo una línea de enorme belleza en una adecuación estilística de alta escuela. Un gran Verdi como cierre de temporada.”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Ópera Actual",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"9ad67b36-6bd7-438f-837c-71e1335f213b\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "",
+              "_uid": "3cb68ddc-49a7-4bfb-a948-9220e6dfcad9",
+              "date": "",
+              "author": "Nuria Blanco Álvarez",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Pero fue Juan Jesús Rodríguez quien se llevó el gato al agua con su debut en Oviedo de Don Carlo, siendo, con absoluto merecimiento, el más aplaudido de la noche. Además de presencia escénica, el andaluz cuenta con un portentoso instrumento que puso al servicio de un rol que le va como anillo al dedo; especialmente impactante fue la escena ante la tumba de Carlo Magno del tercer acto.”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Juan Jesús Rodríguez triunfa en ‘Ernani’, por Nuria Blanco Álvarez”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Scherzo",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"3cb68ddc-49a7-4bfb-a948-9220e6dfcad9\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "",
+              "_uid": "2e4869fb-226b-46e8-9a91-92f5a412fb13",
+              "date": "",
+              "author": "Pablo Álvarez Siana",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“El rey y emperador de la función resultaría Juan Jesús Rodríguez, muy aplaudido y querido en el coliseo carbayón, dominador de la escena y poseedor de una voz a la que se ha calificado como verdiana porque su registro y modo de afrontar los papeles que para barítono escribió el de Busseto, los hace todos suyos, siendo su debut en este rol aquí en Oviedo. Emocionalmente la evolución de su Don Carlo es encomiable, de poderoso e implacable a clemente, lo cual se refleja en su línea de canto. Su declaración de amor a Elvira del primer acto (“Quello escolta del mio cor”) fue un derroche vocal y la escena ante la tumba de Carlomagno en la esquina derecha, una lección de buen fraseo y cantar matizado con el aria “Gran Dio… Oh, de’ verd’ anni miei.”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“ ‘Ernani’ en Oviedo: Un drama que pide clemencia – Opera World”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Ópera World",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"2e4869fb-226b-46e8-9a91-92f5a412fb13\", \"id\": \"78550765905141\"}-->"
+            },
+            {
+              "url": "",
+              "_uid": "b83305fb-bdc0-445c-97af-525ed2e78a54",
+              "date": "",
+              "author": "Javier Labrada",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“También con una entrega ascendente, pero ajeno a todo lo anterior, el Don Carlo de Juan Jesús Rodríguez hizo gala de un oficio intachable, posicionándose en opinión de quien firma como lo mejor de la noche y demostrándose con cada frase como un valor seguro, como pocos para este tipo de roles verdianos.”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“Alejandro Roy, Marigona Qerkezi y Juan Jesús Rodríguez protagonizan «Ernani» en Oviedo – Platea Magazine”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Platea Magazine",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"b83305fb-bdc0-445c-97af-525ed2e78a54\", \"id\": \"78550765905141\"}-->"
+            }
+          ],
+          "component": "reviewGroup",
+          "_editable": "<!--#storyblok#{\"name\": \"reviewGroup\", \"space\": \"285776547914096\", \"uid\": \"ac8b81ef-4a5c-4d65-89b3-f89c4c4baa46\", \"id\": \"78550765905141\"}-->"
+        },
+        {
+          "_uid": "c05f5229-981d-47ff-98dd-9af1acffe07d",
+          "title": "ANDREA CHENIER, Berlin, Deutsche Oper – Junio 2022",
+          "reviews": [
+            {
+              "url": "",
+              "_uid": "c58d9e19-9135-4dc1-9aa7-4749ed63781a",
+              "date": "",
+              "author": "Bern Hoppe",
+              "review": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "“",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      },
+                      {
+                        "text": "Rodríguez als Carlo Gérard nicht einen Deut zurück. Mit potenter Höhe, strömender Fülle und virilem Ausdruck bot auch er eine grandiose Leistung – stürmisch akklamiert sein großer Monolog „Nemico della patria“ im 3.Akt.",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }]
+                      },
+                      {
+                        "text": "”",
+                        "type": "text",
+                        "marks": [{ "type": "bold" }, { "type": "italic" }]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "reviewItem",
+              "mediaOutlet": "Berlin Do Wa",
+              "_editable": "<!--#storyblok#{\"name\": \"reviewItem\", \"space\": \"285776547914096\", \"uid\": \"c58d9e19-9135-4dc1-9aa7-4749ed63781a\", \"id\": \"78550765905141\"}-->"
+            }
+          ],
+          "component": "reviewGroup",
+          "_editable": "<!--#storyblok#{\"name\": \"reviewGroup\", \"space\": \"285776547914096\", \"uid\": \"c05f5229-981d-47ff-98dd-9af1acffe07d\", \"id\": \"78550765905141\"}-->"
+        }
+      ],
+      "intro": { "type": "doc", "content": [{ "type": "paragraph" }] },
+      "title": "",
+      "component": "reviewContent",
+      "_editable": "<!--#storyblok#{\"name\": \"reviewContent\", \"space\": \"285776547914096\", \"uid\": \"0320a812-bcf9-4148-b5e7-a510164bc029\", \"id\": \"78550765905141\"}-->"
+    }
+  ],
+  "Header": [
+    {
+      "_uid": "a300673a-d24e-4aeb-9ac6-662c32382ad9",
+      "image": {
+        "id": 78697994408317,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/1024x681/70c487b481/lucia-di-lammermoor-1024x681.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "route": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "title": "Juan Jesús Rodríguez - Crítica",
+      "component": "meta",
+      "description": "Conoce la opinión de la crítica sobre el considerado uno de los mejores barítonos verdianos del panorama actual",
+      "shortDescription": "Conoce la opinión de la crítica sobre el considerado uno de los mejores barítonos verdianos del panorama actual",
+      "_editable": "<!--#storyblok#{\"name\": \"meta\", \"space\": \"285776547914096\", \"uid\": \"a300673a-d24e-4aeb-9ac6-662c32382ad9\", \"id\": \"78550765905141\"}-->"
+    },
+    {
+      "_uid": "b86f3cc1-786a-4f4a-ab17-4fe03da17bde",
+      "logo": {
+        "id": 68873134794972,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/160x40/261c6d749c/logo_white.svg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "menu": [
+        {
+          "_uid": "65b25925-5a4c-43ff-bce6-6293450dcb7f",
+          "link": {
+            "id": "e700ffa5-6c8f-481a-8795-de79d7edb941",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "label": "Home",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"65b25925-5a4c-43ff-bce6-6293450dcb7f\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "30b45370-c367-4f7a-bcd8-98e6b244e2b3",
+          "link": {
+            "id": "c70c002f-5827-41af-bb7b-519d254c8fd2",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "biography"
+          },
+          "label": "Biography",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"30b45370-c367-4f7a-bcd8-98e6b244e2b3\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "108a8482-3bb3-4860-a702-d27ba877c5d2",
+          "link": {
+            "id": "5299e938-0021-4d10-8d39-2fbdd8981b35",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "photos"
+          },
+          "label": "Photos",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"108a8482-3bb3-4860-a702-d27ba877c5d2\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "8b860222-3f0e-41ea-b91d-71e596670cac",
+          "link": {
+            "id": "06df57d2-dc3d-4078-b484-2a28a1901cd8",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "videos"
+          },
+          "label": "Videos",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"8b860222-3f0e-41ea-b91d-71e596670cac\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "88236b1b-9990-467f-b75b-2e0ec3b41c0d",
+          "link": {
+            "id": "191689af-7d2c-401a-9adf-7ca8f7a6b305",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "events"
+          },
+          "label": "Upcoming performances",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"88236b1b-9990-467f-b75b-2e0ec3b41c0d\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "fe8e240b-d30f-4a76-8366-7e64f53c2f9f",
+          "link": {
+            "id": "0e987786-a6aa-4eb0-a753-78090f41839e",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "critica"
+          },
+          "label": "Reviews",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"fe8e240b-d30f-4a76-8366-7e64f53c2f9f\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "1c509f06-57d9-46cf-9d4c-ae03bf7a9680",
+          "link": {
+            "id": "8341dbaa-4e48-4b77-ae8b-981177de53c9",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "contacto"
+          },
+          "label": "Contact",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"1c509f06-57d9-46cf-9d4c-ae03bf7a9680\", \"id\": \"70936834402129\"}-->"
+        }
+      ],
+      "title": "Juan Jesus Rodriguez",
+      "component": "header",
+      "titleLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"header\", \"space\": \"285776547914096\", \"uid\": \"b86f3cc1-786a-4f4a-ab17-4fe03da17bde\", \"id\": \"78550765905141\"}-->"
+    }
+  ],
+  "component": "page",
+  "_editable": "<!--#storyblok#{\"name\": \"page\", \"space\": \"285776547914096\", \"uid\": \"f23ba91d-7a83-4df4-94a6-3df56db193d1\", \"id\": \"78550765905141\"}-->"
+}

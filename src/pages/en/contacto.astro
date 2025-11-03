@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css'; // IGNORE
+import { useStoryblokApi } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { getComponent } from '../../utils/getcomponent';
+import type { StoryblokMeta } from '../../types/StoryblokMeta';
+import type { StoryblokHeader } from '../../types/StoryblokHeader';
+import isPreview from '../../utils/isPreview';
+import content from '../../assets/data/en/contact.json';
+
+// const storyblokApi = useStoryblokApi()
+// const { data } = await storyblokApi.get('cdn/stories/contacto', {
+//   version: isPreview() ? 'draft' : 'published',
+
+// })
+
+// const story = data.story
+// const { content } = story
+const meta: StoryblokMeta = (getComponent('meta', content.Header) as StoryblokMeta);
+const header: StoryblokHeader = (getComponent('header', content.Header) as StoryblokHeader);
+---
+
+<Layout meta={meta} header={header}>
+    {content?.body.length > 0 ? content?.body?.map((component: any) => <StoryblokComponent blok={component} /> ): null}
+    <div class="flex flex-col items-center justify-center w-3xl text-center m-auto p-12">
+      <h1 class="text-3xl font-bold mb-4">Get in touch with me</h1>
+      <p class="text-lg">
+        If you are interested in my work or have any questions, please contact me. You can also reach out to me via
+        <a href="https://www.facebook.com/juanjesus.rodriguezjimenez" target="_blank" class="text-yellow-400 hover:underline">Facebook</a>
+        or via
+        <a href="mailto:juanjesusrodriguezsite@gmail.com" class="text-yellow-400 hover:underline">email</a>.
+      </p>
+    </div>
+</Layout>

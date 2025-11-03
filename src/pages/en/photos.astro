@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css'; // IGNORE
+import { useStoryblokApi } from '@storyblok/astro'
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
+import { getComponent } from '../../utils/getcomponent';
+import type { StoryblokMeta } from '../../types/StoryblokMeta';
+import type { StoryblokHeader } from '../../types/StoryblokHeader';
+import isPreview from '../../utils/isPreview';
+import content from '../../assets/data/en/photos.json';
+
+// const storyblokApi = useStoryblokApi()
+// const { data } = await storyblokApi.get('cdn/stories/photos', {
+//   version: isPreview() ? 'draft' : 'published',
+
+// })
+
+// const story = data.story
+// const { content } = story
+const meta: StoryblokMeta = (getComponent('meta', content.Header) as StoryblokMeta);
+const header: StoryblokHeader = (getComponent('header', content.Header) as StoryblokHeader);
+console.log("content", JSON.stringify(content))
+---
+
+<Layout meta={meta} header={header}>
+    {content?.body.length > 0 ? content?.body?.map((component: any) => <StoryblokComponent blok={component} /> ): null}
+</Layout>

@@ -1,9 +1,11 @@
 ---
 const { blok } = Astro.props
 const {label, link} = blok
-console.log("menuItem", blok)
+const url = new URL(Astro.request.url);
+const isEn = url.pathname.split('/').includes('en');
 ---
 
 <li class="text-center">
-    <a href={link.cached_url} class="hover:underline text-black">{label}</a>
+
+    <a href={isEn ? `/en/${link.cached_url}` : link.cached_url} class="hover:underline text-black">{label}</a>
 </li>

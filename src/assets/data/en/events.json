@@ -1,0 +1,352 @@
+{
+  "_uid": "72c39466-a9ef-4ef9-b9c4-57a39ae5252a",
+  "body": [
+    {
+      "_uid": "a47bacd3-2de2-4c3f-9ac6-c85db30ed28b",
+      "image": {
+        "id": 78542516039602,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/2953x1970/71d77946a9/juan-jesus-rodriguez-rigoleto.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": { "size": "2953x955" },
+        "is_external_url": false
+      },
+      "title": "Performances",
+      "component": "headerSection",
+      "_editable": "<!--#storyblok#{\"name\": \"headerSection\", \"space\": \"285776547914096\", \"uid\": \"a47bacd3-2de2-4c3f-9ac6-c85db30ed28b\", \"id\": \"78540904508440\"}-->"
+    },
+    {
+      "_uid": "7002c9b6-c8cd-42ac-9235-e61284a8c2e0",
+      "intro": { "type": "doc", "content": [{ "type": "paragraph" }] },
+      "title": "Upcoming performances",
+      "component": "eventSection",
+      "eventList": [
+        {
+          "_uid": "08d0a28e-cfe6-4c4f-8e96-78a02ebf45e3",
+          "city": "Bilbao",
+          "date": "25th, 28th, 31st October and 3rd November",
+          "link": "https://www.abao.org/es/opera/la-forza-del-destino#nav-artistic_sheet",
+          "role": "Don Carlo di Vargas",
+          "image": {
+            "id": 78744612220289,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/343x211/efc7a55941/euskalduna.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "La forza del destino  ",
+          "venue": "Euskalduna",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"08d0a28e-cfe6-4c4f-8e96-78a02ebf45e3\", \"id\": \"78540904508440\"}-->"
+        },
+        {
+          "_uid": "5fa329f2-ead7-41e9-8b26-386fefb79977",
+          "city": "Tenerife",
+          "date": "5th and 6th December",
+          "link": "https://www.auditoriodetenerife.com/es/evento/adios-a-la-bohemia/",
+          "role": "Ramón",
+          "image": {
+            "id": 83331905553877,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/600x400/f4c57a2d54/auditorio-tenerife.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Adiós a la bohemia",
+          "venue": "Tenerife Auditorium",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"5fa329f2-ead7-41e9-8b26-386fefb79977\", \"id\": \"78540904508440\"}-->"
+        },
+        {
+          "_uid": "b704d64a-ad74-404b-b6c6-569a672dc033",
+          "city": "Madrid",
+          "date": "28 January",
+          "link": "",
+          "role": "Ramón",
+          "image": {
+            "id": 83332862744026,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/1080x1080/e26eef8b70/teatro-de-la-zarzuela_madrid.webp",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Con Alma de Zarzuela",
+          "venue": "Teatro de la Zarzuela",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"b704d64a-ad74-404b-b6c6-569a672dc033\", \"id\": \"78540904508440\"}-->"
+        },
+        {
+          "_uid": "9fb1824c-d2bc-4fdb-99f3-1edb4b097594",
+          "city": "Berlín",
+          "date": "22 February and 2 March",
+          "link": "https://deutscheoperberlin.de/en_EN/production/rigoletto.1355819",
+          "role": "Rigoletto",
+          "image": {
+            "id": 83333828589023,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/1240x580/12ad385dfd/berlin_deutsche_oper_zuschauerraum.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Rigoletto",
+          "venue": "Deutsche oper Berlín",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"9fb1824c-d2bc-4fdb-99f3-1edb4b097594\", \"id\": \"78540904508440\"}-->"
+        },
+        {
+          "_uid": "7c6c20b9-5318-4c5d-9abb-2178305de493",
+          "city": "Sevilla",
+          "date": "15th, 17th, 19th April",
+          "link": "https://www.teatrodelamaestranza.es/es/shows/detalle/433/marina/",
+          "role": "Roque",
+          "image": {
+            "id": 83334688302560,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/1200x848/e2f83dfd48/teatro-de-la-maestranza.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Marina",
+          "venue": "Maestranza Theatre in Seville",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"7c6c20b9-5318-4c5d-9abb-2178305de493\", \"id\": \"78540904508440\"}-->"
+        },
+        {
+          "_uid": "d7a9ef3f-6c6c-4548-8259-9b09147c17c0",
+          "city": "Bilbao",
+          "date": "23, 26, 29 de Mayo y 1 de junio",
+          "link": "https://www.abao.org/es/opera/andrea-chenier",
+          "role": "Carlo Gérard",
+          "image": {
+            "id": 78744612220289,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/343x211/efc7a55941/euskalduna.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Andrea Chernier",
+          "venue": "Euskalduna",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"d7a9ef3f-6c6c-4548-8259-9b09147c17c0\", \"id\": \"78540904508440\"}-->"
+        },
+        {
+          "_uid": "8f52d73b-6a8d-49b7-904d-db88f37e4fc0",
+          "city": "Madrid",
+          "date": "July 1st, 4th, 8th, 11th, 15th, 18th",
+          "link": "https://www.teatroreal.es/es/espectaculo/il-trovatore",
+          "role": "El conde de Luna",
+          "image": {
+            "id": 78545666457542,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/285776547914096/960x768/b4abd0c8c8/teatro_real_de_madrid_2025.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Il Trovatore",
+          "venue": "Royal Theatre of Madrid",
+          "component": "event",
+          "_editable": "<!--#storyblok#{\"name\": \"event\", \"space\": \"285776547914096\", \"uid\": \"8f52d73b-6a8d-49b7-904d-db88f37e4fc0\", \"id\": \"78540904508440\"}-->"
+        }
+      ],
+      "_editable": "<!--#storyblok#{\"name\": \"eventSection\", \"space\": \"285776547914096\", \"uid\": \"7002c9b6-c8cd-42ac-9235-e61284a8c2e0\", \"id\": \"78540904508440\"}-->"
+    }
+  ],
+  "Header": [
+    {
+      "_uid": "56a27974-4c10-4c59-8b34-0d0b5923daa3",
+      "image": {
+        "id": 78697994367349,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/1024x683/52e0639eca/ernani-juan-jesus-rodriguez-oviedo-t-campoamor-3-1024x683.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "route": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "title": "Juan Jesús Rodríguez - Eventos",
+      "component": "meta",
+      "description": "Find out about Juan Jesús Rodriguez's upcoming performances",
+      "shortDescription": "Find out about Juan Jesús Rodriguez's upcoming performances. Upcoming productions, concerts...",
+      "_editable": "<!--#storyblok#{\"name\": \"meta\", \"space\": \"285776547914096\", \"uid\": \"56a27974-4c10-4c59-8b34-0d0b5923daa3\", \"id\": \"78540904508440\"}-->"
+    },
+    {
+      "_uid": "f322bea0-060a-4031-b337-24418c424a99",
+      "logo": {
+        "id": 68873134794972,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/160x40/261c6d749c/logo_white.svg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "menu": [
+        {
+          "_uid": "65b25925-5a4c-43ff-bce6-6293450dcb7f",
+          "link": {
+            "id": "e700ffa5-6c8f-481a-8795-de79d7edb941",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "label": "Home",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"65b25925-5a4c-43ff-bce6-6293450dcb7f\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "30b45370-c367-4f7a-bcd8-98e6b244e2b3",
+          "link": {
+            "id": "c70c002f-5827-41af-bb7b-519d254c8fd2",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "biography"
+          },
+          "label": "Biography",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"30b45370-c367-4f7a-bcd8-98e6b244e2b3\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "108a8482-3bb3-4860-a702-d27ba877c5d2",
+          "link": {
+            "id": "5299e938-0021-4d10-8d39-2fbdd8981b35",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "photos"
+          },
+          "label": "Photos",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"108a8482-3bb3-4860-a702-d27ba877c5d2\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "8b860222-3f0e-41ea-b91d-71e596670cac",
+          "link": {
+            "id": "06df57d2-dc3d-4078-b484-2a28a1901cd8",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "videos"
+          },
+          "label": "Videos",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"8b860222-3f0e-41ea-b91d-71e596670cac\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "88236b1b-9990-467f-b75b-2e0ec3b41c0d",
+          "link": {
+            "id": "191689af-7d2c-401a-9adf-7ca8f7a6b305",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "events"
+          },
+          "label": "Upcoming performances",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"88236b1b-9990-467f-b75b-2e0ec3b41c0d\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "fe8e240b-d30f-4a76-8366-7e64f53c2f9f",
+          "link": {
+            "id": "0e987786-a6aa-4eb0-a753-78090f41839e",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "critica"
+          },
+          "label": "Reviews",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"fe8e240b-d30f-4a76-8366-7e64f53c2f9f\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "1c509f06-57d9-46cf-9d4c-ae03bf7a9680",
+          "link": {
+            "id": "8341dbaa-4e48-4b77-ae8b-981177de53c9",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "contacto"
+          },
+          "label": "Contact",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"1c509f06-57d9-46cf-9d4c-ae03bf7a9680\", \"id\": \"70936834402129\"}-->"
+        }
+      ],
+      "title": "Juan Jesus Rodriguez",
+      "component": "header",
+      "titleLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"header\", \"space\": \"285776547914096\", \"uid\": \"f322bea0-060a-4031-b337-24418c424a99\", \"id\": \"78540904508440\"}-->"
+    }
+  ],
+  "component": "page",
+  "_editable": "<!--#storyblok#{\"name\": \"page\", \"space\": \"285776547914096\", \"uid\": \"72c39466-a9ef-4ef9-b9c4-57a39ae5252a\", \"id\": \"78540904508440\"}-->"
+}

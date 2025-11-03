@@ -5,6 +5,17 @@ const { blok } = Astro.props
 console.log("section", blok)
 const { biography, pressDossier } = blok
 console.log(pressDossier)
+const urlPath = (() => {
+    if (typeof window !== "undefined") return window.location.pathname;
+    try {
+        return new URL(Astro.request.url).pathname;
+    } catch {
+        return "/";
+    }
+})();
+
+const isEn = /(^|\/)en(\/|$)/.test(urlPath);
+console.log("urlPath", urlPath, "isEn", isEn);
 
 ---
 
@@ -25,7 +36,7 @@ console.log(pressDossier)
                 target="_blank"
                 class="block mt-8 text-blue-600 underline hover:text-blue-800"
             >
-                Dosier de prensa
+                {!isEn ? "Dosier de prensa" : "Press Kit"}
             </a>
         )}
     </div>

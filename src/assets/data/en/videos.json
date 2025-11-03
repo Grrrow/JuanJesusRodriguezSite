@@ -1,0 +1,373 @@
+{
+  "_uid": "e14a4b20-5563-4072-9344-359d167d2c23",
+  "body": [
+    {
+      "_uid": "e032835e-8246-433d-9be9-6f85aea6293c",
+      "image": {
+        "id": 78487955721720,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "Juan Jesus Rodriguez Il Trovatore",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/1024x683/bad7c40fc5/juan-jesus-rodriguez-trovatore-hero.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {
+          "alt": "",
+          "title": "Juan Jesus Rodriguez Il Trovatore",
+          "source": "",
+          "copyright": ""
+        },
+        "is_external_url": false
+      },
+      "title": "Videos",
+      "component": "headerSection",
+      "_editable": "<!--#storyblok#{\"name\": \"headerSection\", \"space\": \"285776547914096\", \"uid\": \"e032835e-8246-433d-9be9-6f85aea6293c\", \"id\": \"78487170835458\"}-->"
+    },
+    {
+      "_uid": "39c609e2-77fa-4dae-96ba-06c3362f2814",
+      "intro": { "type": "doc", "content": [{ "type": "paragraph" }] },
+      "title": "",
+      "component": "videoSection",
+      "videoList": [
+        {
+          "url": "https://www.youtube.com/watch?v=WzVTRcB2hz4",
+          "_uid": "85ca013e-49e3-41f8-835d-7f8fd90d3b16",
+          "title": " Juan Jesús Rodríguez - Nabucco, Marsella 2023",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"85ca013e-49e3-41f8-835d-7f8fd90d3b16\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://youtu.be/f5iLG9wDv0A",
+          "_uid": "17d2b86f-dfa1-456a-aa32-74d87c6ea463",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"17d2b86f-dfa1-456a-aa32-74d87c6ea463\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6epeFCxdeko",
+          "_uid": "ae70bf60-4909-46e1-b13c-9d000a062317",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"ae70bf60-4909-46e1-b13c-9d000a062317\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://youtu.be/f5iLG9wDv0A",
+          "_uid": "a00191d4-a5f5-4e09-85da-5fb6848adb99",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"a00191d4-a5f5-4e09-85da-5fb6848adb99\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=E5BKo1bh21k",
+          "_uid": "f6ecaeca-6148-41fd-914b-6242d6c1c4bc",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"f6ecaeca-6148-41fd-914b-6242d6c1c4bc\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PjAiHBwYeAg",
+          "_uid": "fd8c4a8f-08fe-4622-a0bb-a21ecfe35f75",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"fd8c4a8f-08fe-4622-a0bb-a21ecfe35f75\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rTHq_758m8c",
+          "_uid": "2fdd818a-e991-472d-a7ed-fe6af50aae7d",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"2fdd818a-e991-472d-a7ed-fe6af50aae7d\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=m17R5rtJMiI",
+          "_uid": "27b1f7cb-5fe8-4aa0-8d4f-0e1644db4944",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"27b1f7cb-5fe8-4aa0-8d4f-0e1644db4944\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Rylc5tueVz0",
+          "_uid": "9f716b56-4029-4719-b49e-8c8007dc03f8",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"9f716b56-4029-4719-b49e-8c8007dc03f8\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZkQE44cirZU",
+          "_uid": "15064259-fcab-4d16-b63d-f67c43519e6e",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"15064259-fcab-4d16-b63d-f67c43519e6e\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pRMui820990",
+          "_uid": "a4b71cbd-e798-407d-a4ac-a6011c9e11e9",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"a4b71cbd-e798-407d-a4ac-a6011c9e11e9\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ak-g6XXyr_g",
+          "_uid": "ea16d75b-2d1c-4dff-8956-968689d1f554",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"ea16d75b-2d1c-4dff-8956-968689d1f554\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3KGfjIBgyTU",
+          "_uid": "30b1016b-66f2-4556-96aa-dabcc8a44268",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"30b1016b-66f2-4556-96aa-dabcc8a44268\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G11L9pwz_mU",
+          "_uid": "b0260fa9-0517-4800-b9c1-7024bb72b3f2",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"b0260fa9-0517-4800-b9c1-7024bb72b3f2\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=J1big2d8MAk",
+          "_uid": "034e6666-a98a-490c-a73f-ab948b73bd33",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"034e6666-a98a-490c-a73f-ab948b73bd33\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wzPZuP-uuGg",
+          "_uid": "b27480e3-72b2-4811-91c4-4a9dcd1a830d",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"b27480e3-72b2-4811-91c4-4a9dcd1a830d\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tmBZUPJq55w",
+          "_uid": "11258b49-e8e4-4188-8306-5a900b144e9b",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"11258b49-e8e4-4188-8306-5a900b144e9b\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0_YvzJjgXMA",
+          "_uid": "194e8aa3-f262-4306-9f78-b5de5cf4eba6",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"194e8aa3-f262-4306-9f78-b5de5cf4eba6\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GkDFkkI7KqE",
+          "_uid": "8e613d4c-4753-4c20-ae2f-62b097d532da",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"8e613d4c-4753-4c20-ae2f-62b097d532da\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iQHW0ZMujl8",
+          "_uid": "31c305b9-ae7d-42cf-9046-a28669304974",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"31c305b9-ae7d-42cf-9046-a28669304974\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=o7vaZzGbGTM",
+          "_uid": "65dfe368-98fb-4e36-ad34-1cfec741964a",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"65dfe368-98fb-4e36-ad34-1cfec741964a\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q9-_XriGnNw",
+          "_uid": "1581a5e2-7eb0-4db4-afbe-fb6601a50b0b",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"1581a5e2-7eb0-4db4-afbe-fb6601a50b0b\", \"id\": \"78487170835458\"}-->"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=67-hvCAYM58",
+          "_uid": "6a93d0a9-9772-4b6a-89e2-a40c166ec4fc",
+          "title": "",
+          "component": "videoItem",
+          "description": "",
+          "_editable": "<!--#storyblok#{\"name\": \"videoItem\", \"space\": \"285776547914096\", \"uid\": \"6a93d0a9-9772-4b6a-89e2-a40c166ec4fc\", \"id\": \"78487170835458\"}-->"
+        }
+      ],
+      "_editable": "<!--#storyblok#{\"name\": \"videoSection\", \"space\": \"285776547914096\", \"uid\": \"39c609e2-77fa-4dae-96ba-06c3362f2814\", \"id\": \"78487170835458\"}-->"
+    }
+  ],
+  "Header": [
+    {
+      "_uid": "4a28a3a3-1a80-4537-a362-c1c2f57915c8",
+      "image": {
+        "id": 78697994428799,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/1024x683/2a38bdece5/rigoletto_1899-1024x683.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+      "route": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "title": "Juan Jesús Rodríguez - Videos",
+      "component": "meta",
+      "description": "Disfruta de los videos de las representaciones de Juan Jesus Rodriguez y conoce su trabajo en vivo",
+      "shortDescription": "Disfruta de los videos de las representaciones de Juan Jesus Rodriguez y conoce su trabajo en vivo",
+      "_editable": "<!--#storyblok#{\"name\": \"meta\", \"space\": \"285776547914096\", \"uid\": \"4a28a3a3-1a80-4537-a362-c1c2f57915c8\", \"id\": \"78487170835458\"}-->"
+    },
+    {
+      "_uid": "5b43774e-ce43-4d51-8ddc-d49bf2245feb",
+      "logo": {
+        "id": 68873134794972,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/285776547914096/160x40/261c6d749c/logo_white.svg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_external_url": false
+      },
+     "menu": [
+        {
+          "_uid": "65b25925-5a4c-43ff-bce6-6293450dcb7f",
+          "link": {
+            "id": "e700ffa5-6c8f-481a-8795-de79d7edb941",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "home"
+          },
+          "label": "Home",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"65b25925-5a4c-43ff-bce6-6293450dcb7f\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "30b45370-c367-4f7a-bcd8-98e6b244e2b3",
+          "link": {
+            "id": "c70c002f-5827-41af-bb7b-519d254c8fd2",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "biography"
+          },
+          "label": "Biography",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"30b45370-c367-4f7a-bcd8-98e6b244e2b3\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "108a8482-3bb3-4860-a702-d27ba877c5d2",
+          "link": {
+            "id": "5299e938-0021-4d10-8d39-2fbdd8981b35",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "photos"
+          },
+          "label": "Photos",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"108a8482-3bb3-4860-a702-d27ba877c5d2\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "8b860222-3f0e-41ea-b91d-71e596670cac",
+          "link": {
+            "id": "06df57d2-dc3d-4078-b484-2a28a1901cd8",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "videos"
+          },
+          "label": "Videos",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"8b860222-3f0e-41ea-b91d-71e596670cac\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "88236b1b-9990-467f-b75b-2e0ec3b41c0d",
+          "link": {
+            "id": "191689af-7d2c-401a-9adf-7ca8f7a6b305",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "events"
+          },
+          "label": "Upcoming performances",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"88236b1b-9990-467f-b75b-2e0ec3b41c0d\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "fe8e240b-d30f-4a76-8366-7e64f53c2f9f",
+          "link": {
+            "id": "0e987786-a6aa-4eb0-a753-78090f41839e",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "critica"
+          },
+          "label": "Reviews",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"fe8e240b-d30f-4a76-8366-7e64f53c2f9f\", \"id\": \"70936834402129\"}-->"
+        },
+        {
+          "_uid": "1c509f06-57d9-46cf-9d4c-ae03bf7a9680",
+          "link": {
+            "id": "8341dbaa-4e48-4b77-ae8b-981177de53c9",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": "contacto"
+          },
+          "label": "Contact",
+          "component": "MenuItem",
+          "_editable": "<!--#storyblok#{\"name\": \"MenuItem\", \"space\": \"285776547914096\", \"uid\": \"1c509f06-57d9-46cf-9d4c-ae03bf7a9680\", \"id\": \"70936834402129\"}-->"
+        }
+      ],
+      "title": "Juan Jesus Rodriguez",
+      "component": "header",
+      "titleLink": {
+        "id": "",
+        "url": "",
+        "linktype": "story",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "_editable": "<!--#storyblok#{\"name\": \"header\", \"space\": \"285776547914096\", \"uid\": \"5b43774e-ce43-4d51-8ddc-d49bf2245feb\", \"id\": \"78487170835458\"}-->"
+    }
+  ],
+  "component": "page",
+  "_editable": "<!--#storyblok#{\"name\": \"page\", \"space\": \"285776547914096\", \"uid\": \"e14a4b20-5563-4072-9344-359d167d2c23\", \"id\": \"78487170835458\"}-->"
+}

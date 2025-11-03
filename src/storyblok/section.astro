@@ -33,9 +33,6 @@ const { title, description, descriptionColor, image, readMoreLabel, readMoreLink
             {readMoreLink.url.length > 0 && (
                 <a href={readMoreLink.url} class="text-xl transition hover:text-under-400 hover:brightness-125">{readMoreLabel} ></a>
             )}
-            {readMoreLink.cached_url.length > 0 && (
-                <a href={readMoreLink.cached_url} class="text-xl transition hover:text-under-400 hover:brightness-125">{readMoreLabel} ></a>
-            )}
             {otherLink.url.length > 0 && (
                 <a href={otherLink.url} class="text-xl transition hover:text-under-400 hover:brightness-125">{otherLinkLabel} ></a>
             )}
